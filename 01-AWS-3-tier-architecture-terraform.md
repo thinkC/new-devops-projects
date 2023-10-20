@@ -1,6 +1,6 @@
 # A 3-tier architecture on AWS with Terraform
 
-![3-tier-diagram]()
+![3-tier-diagram](https://github.com/thinkC/new-devops-projects/blob/master/aws-terraform-img/01-img-01.png?raw=true)
 
 ## Step-01: Introduction
 
