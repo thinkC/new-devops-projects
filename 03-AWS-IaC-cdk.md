@@ -345,5 +345,7 @@ Elastic IP
 ![elastic ip](https://github.com/thinkC/new-devops-projects/blob/master/aws-cdk-img/python-cdk-elastic-ip.png?raw=true).
 
 
-## Conclusion.
+## Conclusion:
+
+AWS VPC was successfully created with AWS CDK using python.
 
