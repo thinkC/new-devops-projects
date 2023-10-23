@@ -342,4 +342,4 @@ NAT Gateway
 
 Elastic IP
 
-![vpc](https://github.com/thinkC/new-devops-projects/blob/master/aws-cdk-img/python-cdk-elastic ip?raw=true)
+![vpc](https://github.com/thinkC/new-devops-projects/blob/master/aws-cdk-img/python-cdk-elastic_ip?raw=true)
