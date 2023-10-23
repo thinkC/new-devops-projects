@@ -334,12 +334,12 @@ Custom vpc created
 
 Route Table
 
-![vpc](https://github.com/thinkC/new-devops-projects/blob/master/aws-cdk-img/python-cdk-rt.png?raw=true)
+![route table](https://github.com/thinkC/new-devops-projects/blob/master/aws-cdk-img/python-cdk-rt.png?raw=true)
 
 NAT Gateway
 
-![vpc](https://github.com/thinkC/new-devops-projects/blob/master/aws-cdk-img/python-cdk-nat.png?raw=true)
+![nat](https://github.com/thinkC/new-devops-projects/blob/master/aws-cdk-img/python-cdk-nat.png?raw=true)
 
 Elastic IP
 
-![vpc](https://github.com/thinkC/new-devops-projects/blob/master/aws-cdk-img/python-cdk-elastic_ip?raw=true)
+![elastic ip](https://github.com/thinkC/new-devops-projects/blob/master/aws-cdk-img/python-cdk-elastic-ip?raw=true)
