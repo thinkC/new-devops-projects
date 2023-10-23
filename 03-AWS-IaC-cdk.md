@@ -3,31 +3,28 @@
 ## Step 1: Introduction
 
 AWS Cloud Development Kit (AWS CDK) helps in provisioning cloud infrastructre using common programming languages to model application.
-It supports several programming languages such as TypeScript, JavaScript, Python, Java, Go, .NET and provides high-level easy to use contructs. It also allows a fallback on low-level CloudFormation contructs
+It supports several programming languages such as TypeScript, JavaScript, Python, Java, Go, and .NET and provides high-level easy to use contructs. It also allows a fallback on low-level CloudFormation contructs.
 
 ## Step 2: Environment Setup
 
-In this project we are going to build two infrastructures in AWS using Python. First we setup the environment using Python
+In this project we are going to build a custom VPC, public and a private subnets in AWS using Python. First we setup the environment using Python
 
 ## Python
 
 This steps involves setting up AWS CDK version 1.58 on Ubuntu Linux 20.04. We would install the required dependencies and the use pip (Python package manager) to install the CDK.
 
-1. Install Node.js: (AWS CDK requires Node.js), by first update and upgrade the system
+1. Install Node.js: (AWS CDK requires Node.js), we first update and upgrade the system
 
 
 ```bash
 sudo apt update
 sudo apt upgrade
-sudo apt install nodejs npm
-
 ```
 2. Install Node.js with NVM (Node Version Manager):
-NVM is a popular tool for managing multiple Node.js versions on your system. It allows you to easily switch between different Node.js versions. To install Node.js 14.x using NVM, follow these steps:
+NVM is a popular tool for managing multiple Node.js versions on your system. It allows you to easily switch between different Node.js versions. To install Node.js 18.x using NVM, follow these steps:
 
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-
 ```
 a. Close and reopen the termminal
 ```bash
@@ -43,7 +40,6 @@ nvm --version
 Once NVM is installed, you can use it to install Node.js version 18.0.0 with the following command:
 ```bash
 nvm install 18.0.0
-
 ```
 
 3. Set Node.js version 18.0.0 as the active version and as the default and check version
@@ -73,15 +69,13 @@ Use npm (Node Package Manager) to install the AWS CDK and check version:
 ```bash
 npm install -g aws-cdk@1.58
 cdk --version
-
 ```
 
 6. Configure AWS Credentials (if not already done):
-If you haven't configured AWS credentials on your Ubuntu system, you can set them up by running:
+If you haven't configured AWS credentials on your Ubuntu system, you can set them up by running: Add YOUR aws access ID, secrte ID and deafult region.
 
 ```bash
 aws configure
-
 ```
 
 7. Create a CDK Application:
@@ -101,7 +95,6 @@ cdk init app --language=python
 ```bash
 python3 -m venv .env
 source .env/bin/activate
-
 ```
 Note: You might need to install the Python environment first
 
@@ -115,20 +108,18 @@ source .env/bin/activate
 
 ```bash
 pip install -r requirements.txt
-
 ```
 
 10. Bootstrap the CDK Environment:
-You can proceed to bootstrap your CDK environment: This creates AWS resources such as S3 bucket to host the cloud assembly assets, and application artifacts and creates AWS CDKToolkit. It also creates the IAM roles, policies to facilitate deploying AWS resources using CDK
+You can proceed to bootstrap your CDK environment: This creates AWS resources such as S3 bucket to host the cloud assembly assets, and application artifacts and creates AWS CDKToolkit. It also creates the IAM roles, policies to facilitate deploying AWS resources using CDK.
 
 ```bash
 cdk bootstrap
-
 ```
 
 ## Step 3: Create a Basic AWS VPC Stack
 
-Open the CDK app in the folder `my-cdk-app` and change directory to the `lib` folder and create a file `custom_subnet_vpc_stack.py`
+Open the CDK app in the folder `my-cdk-app` and change directory to the `my_cdk_app` folder and create a file `custom_subnet_vpc_stack.py`
 
 
 ```python
