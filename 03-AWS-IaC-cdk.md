@@ -7,7 +7,7 @@ It supports several programming languages such as TypeScript, JavaScript, Python
 
 ## Step 2: Environment Setup
 
-In this project we are going to build two infrastructures in AWS using Python and JavaScript. First we setup teh environment using Python and next we do same with JavaScript.
+In this project we are going to build two infrastructures in AWS using Python. First we setup the environment using Python
 
 ## Python
 
@@ -342,4 +342,8 @@ NAT Gateway
 
 Elastic IP
 
-![elastic ip](https://github.com/thinkC/new-devops-projects/blob/master/aws-cdk-img/python-cdk-elastic-ip?raw=true)
+![elastic ip](https://github.com/thinkC/new-devops-projects/blob/master/aws-cdk-img/python-cdk-elastic-ip.png?raw=true).
+
+
+## Conclusion.
+
