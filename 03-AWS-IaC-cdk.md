@@ -1,4 +1,4 @@
-# Create an EC2 instance in a custom VPC and security Group on AWS Using AWS CDK
+# Create a custom VPC, security groups and NACL using AWS CDK with python
 
 ## Step 1: Introduction
 
