@@ -119,7 +119,7 @@ cdk bootstrap
 
 ## Step 3: Create a Basic AWS VPC Stack
 
-Open the CDK app in the folder `my-cdk-app` and change directory to the `my_cdk_app` folder and create a file `custom_subnet_vpc_stack.py`
+Open the CDK app in the folder `my-cdk-app` and change directory to the `my_cdk_app` folder and create a file `custom_subnet_vpc_stack.py` and add the code below.
 
 
 ```python
