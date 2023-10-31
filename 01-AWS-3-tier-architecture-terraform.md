@@ -197,7 +197,7 @@ variable "vpc_single_nat_gateway" {
   default = true
 }
 ```
-_vpc_module.tf
+_vpc_module.tf_
 ```hcl
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
@@ -232,7 +232,7 @@ public_subnet_tags = {
 }
 
 private_subnet_tags = {
-    Type = "Purivate Subnets"
+    Type = "Private Subnets"
 }
 
 database_subnet_tags = {
