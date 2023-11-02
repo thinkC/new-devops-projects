@@ -90,5 +90,3 @@ servicerole- AWSCodePipelineServiceRole-us-east-1-myreactappcodepipeline
 
 
 
-codepipelineuser-at-447865183182
-7DKVNC54gUc8VJsDK5s/izZQUja7KrAnslH+6Hws7pU=
