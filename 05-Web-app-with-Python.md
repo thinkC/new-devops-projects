@@ -134,24 +134,15 @@ Note:
 In the `subprocess.run` function, the `shell` and `check` parameters are used to control how the subprocess is executed and how errors are handled.
 
 1. `shell=True`:
-   - When `shell` is set to `True`, it tells `subprocess.run` to run the command through the system shell (e.g., Bash, PowerShell, or Command Prompt). This is useful when your command contains shell features like wildcard expansion, piping, or redirection.
-   - Setting `shell=True` allows you to use shell-specific syntax and features in your command, but it also means that the command is passed to a shell for execution, which might introduce potential security risks if the command contains user-supplied input. Be cautious and validate user inputs to avoid shell injection vulnerabilities.
+
+   - When `shell` is set to `True`, it tells `subprocess.run` to run the command through the system shell.
 
 2. `check=True`:
-   - When `check` is set to `True`, it instructs `subprocess.run` to raise a `CalledProcessError` exception if the executed command returns a non-zero exit status. A non-zero exit status typically indicates that the command encountered an error during execution.
-   - If `check` is set to `False`, the function will not raise an exception for a non-zero exit status, allowing you to handle the errors yourself.
+   - When `check` is set to `True`, it instructs `subprocess.run` to raise a `CalledProcessError` exception if the executed command returns a non-zero exit status.
 
 For example, consider the following code:
 
-```python
-subprocess.run("ls non_existent_directory", shell=True, check=True)
-```
 
-With `shell=True` and `check=True`, if the "ls" command fails to list a non-existent directory, a `CalledProcessError` will be raised, and the script will terminate. This is useful for handling errors in a more structured way.
-
-If you set `check=False`, the script would continue running, and you would need to manually check the `returncode` attribute of the completed subprocess to determine if an error occurred.
-
-In summary, `shell=True` allows the use of shell-specific features, and `check=True` enforces checking for non-zero exit status and raises exceptions if necessary. These parameters are used to control the subprocess behavior and error handling in a more predictable and reliable way.
 
 ## Conclusion:
 
