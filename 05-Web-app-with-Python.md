@@ -140,9 +140,6 @@ In the `subprocess.run` function, the `shell` and `check` parameters are used to
 2. `check=True`:
    - When `check` is set to `True`, it instructs `subprocess.run` to raise a `CalledProcessError` exception if the executed command returns a non-zero exit status.
 
-For example, consider the following code:
-
-
 
 ## Conclusion:
 
