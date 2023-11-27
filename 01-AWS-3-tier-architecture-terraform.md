@@ -5,7 +5,7 @@
 ## Introduction:
 The 3-tier architecture as seen in the diagram above consist of a vpc with two avaialability zones. Two public subnets are created in each availability zones e.g.  "us-east-1a" and "us-east-1b"; each also containing a NAT gateway in each zones with one jumpbox or bastion host in any of the public subnet. This jumpbox host will be used to gain accesess to the ec2 instances in the private subnets. This NAT gateway will be used by the ec2 instances in the private subnets to gain access to the internet.
 
-The private subnet are divided into two. The first set of private subnet is where the web applications will reside and will have access to the insternet through the NAT gateway. The other set of private subnet would host the databases in reach availability zones.
+The private subnet are divided into two. The first set of private subnet is where the web applications will reside and will have access to the internet through the NAT gateway. The other set of private subnet would host the databases in each availability zones.
 
 
 This project will use terrarform modules to create aws resources such as `vpc`, `ec2` instances, `security groups` and also create `aws eip` (elastic ip), `null resource`, `file provisioner`, `remote-exec provisioner`, and `depends_on Meta-Argument`.
