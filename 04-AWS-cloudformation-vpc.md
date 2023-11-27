@@ -318,7 +318,7 @@ Resources:
 
 ```
 
-4. Upload the Template to AWS S3 . This is where AWS CloudFormation can access the template. Note the S3 URL. Clik on the s3 bucket created earlier and click `upload`. Click the `Add files` button or drag the file.
+4. Upload the Template to AWS S3 . This is where AWS CloudFormation can access the template. Note the S3 URL. Click on the s3 bucket created earlier and click `upload`. Click the `Add files` button or drag the file.
 5. Back to cloudformation, choose `Template is ready` and select `Upload a template file.` Provide the S3 bucket URL or upload the template file directly.
 6. Specify Stack Details: Enter a stack name, and fill out any parameters or tags required by your template.
 7. Configure Stack Options: You can configure stack options like permissions, rollback settings, and stack policy. This step is optional.
